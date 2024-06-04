@@ -1,0 +1,78 @@
+publiccodeYmlVersion: "0.2"
+# Software van een stagair
+name: Toeslag-applicatie
+
+url: "https://github.com/Municipality-of-Rotterdam/Toeslag-applicatie"
+landingURL: 
+softwareVersion: "0.01"    # Optional
+releaseDate: "2024-05-25"
+platforms:
+  - web
+
+categories:
+  - Sociaal domein
+usedBy:
+  - Gemeente Rotterdam
+
+developmentStatus: development
+
+softwareType: "standalone/web"
+
+description:
+  en:
+    localisedName: Toeslag-applicatie   # Optional
+    shortDescription: >
+          Toeslag applicatie voor zorgtoeslag en kinderbijslag. Gemaakt als Afstudeeropdracht.
+          
+    longDescription: >
+        Toeslag applicatie voor zorgtoeslag en kinderbijslag. Gemaakt als Afstudeeropdracht.
+	Een 'Flask' website waarop een gebruiker de zorgtoeslag en kinderbijslag kan berekenen. 
+	Onderliggend wordt gebruik gemaakt van 2 Common Ground componenten: Objects API en de Objectstype API
+
+    features:
+       - Just one feature
+ nl:
+    localisedName: Toeslag-applicatie (afstudeeropdracht)
+    genericName: Toeslag-applicatie 
+    shortDescription: >-
+        Toeslag applicatie voor zorgtoeslag en kinderbijslag. Gemaakt als Afstudeeropdracht.
+	Een 'Flask' website waarop een gebruiker de zorgtoeslag en kinderbijslag kan berekenen. 
+	Onderliggend wordt gebruik gemaakt van 2 Common Ground componenten: Objects API en de Objectstype API
+      
+    features:
+      - Invulscherm 
+      - berekening toeslag
+      - Opslaan
+
+legal:
+  license: unlicense
+
+maintenance:
+  type: "community"
+
+  contacts:
+    - name: Stan-1037079
+
+localisation:
+  localisationReady: true
+  availableLanguages:
+    - NL
+# De Nederlandse uitbreiding op de Common Ground standaard
+nl:
+  countryExtensionVersion: "1.0"
+  commonground:
+  - layerType: "Interactie" "Interface"
+  - installationType: "ZIP"
+  - intendedOrganisations: "https://github.com/Rotterdam"
+  gemma:
+    bedrijfsfuncties:
+      - "Sociaal Domein"
+      - "Jeugdzorg"
+    bedrijfsservices:
+      - "Beheren van zoorzieningenverstrekkingen"
+   
+    applicatiefunctie: "Jeugdzorg component"
+dependsOn:
+  open:
+    - name: Flask
+    - name: Open Objecten 
